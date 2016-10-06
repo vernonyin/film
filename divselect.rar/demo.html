@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>div模拟下拉菜单jquery插件 - 懒人建站</title>
+        <meta name="keywords" content="jquery特效,JS代码,js特效代码大全,导航菜单代码,焦点幻灯片,企业网页设计欣赏" />
+        <meta name="description" content="懒人建站为您提供-基于jquery特效，jquery弹出层效果，js特效代码大全，JS广告代码，导航菜单代码，下拉菜单代码和jquery焦点图片代码。" />
+        <link rel="stylesheet" type="text/css" href="../css/main.css" />
+        <style type="text/css">
+
+            body,ul,li{ margin:0; padding:0; font-size:13px;}
+            ul,li{list-style:none;}
+            div {float:left;}
+
+            #divselect{width:150px; margin:20px 20px; position:relative; z-index:10000;}
+            #divselect cite{width:150px; height:24px;line-height:24px; display:block; color:#807a62; cursor:pointer;font-style:normal;
+                            padding-left:4px; padding-right:30px; border:1px solid #333333; 
+                            background:url(xjt.png) no-repeat right center;}
+            #divselect ul{width:184px;border:1px solid #333333; background-color:#ffffff; position:absolute; z-index:20000; margin-top:-1px; display:none;}
+            #divselect ul li{height:24px; line-height:24px;}
+            #divselect ul li a{display:block; height:24px; color:#333333; text-decoration:none; padding-left:10px; padding-right:10px;}
+            #divselect ul li a:hover{background-color:#CCC;}
+
+        </style>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="divselect.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $.divselect("#divselect", "#inputselect");
+//                  $.divselect("#divselect", "#inputselect");
+            });
+        </script>
+    </head>
+
+    <body>
+        <form action="" method="post">
+            <div id="divselect">
+                <cite>请选择特效分类</cite>
+                <ul>
+                    <li><a href="javascript:;" selectid="1">导航菜单</a></li>
+                    <li><a href="javascript:;" selectid="2">焦点幻灯片</a></li>
+                    <li><a href="javascript:;" selectid="3">广告代码</a></li>
+                    <li><a href="javascript:;" selectid="4">网页特效</a></li>
+                    <li><a href="javascript:;" selectid="5">jquery 特效</a></li>
+                </ul>
+            </div>
+            <div id="divselect">
+                <cite>请选择特效分类</cite>
+                <ul>
+                    <li><a href="javascript:;" selectid="1">导航菜单</a></li>
+                    <li><a href="javascript:;" selectid="2">焦点幻灯片</a></li>
+                    <li><a href="javascript:;" selectid="3">广告代码</a></li>
+                    <li><a href="javascript:;" selectid="4">网页特效</a></li>
+                    <li><a href="javascript:;" selectid="5">jquery 特效</a></li>
+                    <li><a href="javascript:;" selectid="1">导航菜单</a></li>
+                    <li><a href="javascript:;" selectid="2">焦点幻灯片</a></li>
+                    <li><a href="javascript:;" selectid="3">广告代码</a></li>
+                    <li><a href="javascript:;" selectid="4">网页特效</a></li>
+                    <li><a href="javascript:;" selectid="5">jquery 特效</a></li>
+                    <li><a href="javascript:;" selectid="1">导航菜单</a></li>
+                    <li><a href="javascript:;" selectid="2">焦点幻灯片</a></li>
+                    <li><a href="javascript:;" selectid="3">广告代码</a></li>
+                    <li><a href="javascript:;" selectid="4">网页特效</a></li>
+                    <li><a href="javascript:;" selectid="5">jquery 特效</a></li>
+                    <li><a href="javascript:;" selectid="1">导航菜单</a></li>
+                    <li><a href="javascript:;" selectid="2">焦点幻灯片</a></li>
+                    <li><a href="javascript:;" selectid="3">广告代码</a></li>
+                    <li><a href="javascript:;" selectid="4">网页特效</a></li>
+                    <li><a href="javascript:;" selectid="5">jquery 特效</a></li>
+                </ul>
+            </div>
+            <input name="" type="hidden" value="" id="inputselect"/>
+
+        </form>
+        <!--<p style="width:600px; margin:0 auto; line-height:170%;">调用方式：$.divselect("#divselect","#inputselect");  "#divselect" 这是哪个模拟列表的盒子的ID，"#inputselect"这个是选择以后给 id="inputselect" 的input隐藏域赋值的哦。 懂一点程序的都明白为啥要赋值了。意思就是给这个隐藏域赋值就相当于用丑陋的下拉列表得到一个值是同理的。下拉列表的功能无非也就是传一个值提交过去。</p>-->
+
+
+    </body>
+</html>
